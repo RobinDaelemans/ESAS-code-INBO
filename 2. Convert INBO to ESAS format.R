@@ -16,9 +16,9 @@ library(readxl)
 
 # Load the internal INBO database
 setwd("G:/Mijn Drive/Mijn Documenten/SAS DB 2024/Update SAS juni 2025")
-TRP <- read.csv("TRIPALL_MERGE_1992_2024_b.csv", fileEncoding = "UTF-8")
-POS <- read.csv("BASEALL_MERGE_1992_2024_b.csv", fileEncoding = "UTF-8")
-OBS <- read.csv("BIRDALL_MERGE_1992_2024_b.csv", fileEncoding = "UTF-8")
+TRP <- read.csv("TRIPALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
+POS <- read.csv("BASEALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
+OBS <- read.csv("BIRDALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
 
 # Select vessel
 # Select surveys: in this example we only want to upload the surveys/trips from 2024 onwards to the ESAS database
