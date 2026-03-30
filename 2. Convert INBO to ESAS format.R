@@ -21,6 +21,7 @@ POS <- read.csv("BASEALL_MERGE_1992_2024_b.csv", fileEncoding = "UTF-8")
 OBS <- read.csv("BIRDALL_MERGE_1992_2024_b.csv", fileEncoding = "UTF-8")
 
 # Select vessel
+# Select surveys: in this example we only want to upload the surveys/trips from 2024 onwards to the ESAS database
 TRP <- TRP[ymd(TRP$Date) > "2024-01-01" & TRP$Ship == "SBE2",] # Use 'SBE2' for vessel 'Belgica', use "SST" for vessel 'Simon Stevin'
 POS <- POS[POS$Tripkey %in% TRP$Tripkey,]
 OBS <- OBS[OBS$Poskey %in% POS$Poskey,]
