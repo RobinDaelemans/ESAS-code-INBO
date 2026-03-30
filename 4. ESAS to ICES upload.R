@@ -5,10 +5,10 @@
 
 #Read data
 setwd("G:/Mijn Drive/Mijn Documenten/SAS DB 2024/Update SAS juni 2025")
-CAMPAIGNS <- read.csv("CAMPAIGNS_BE_ICES_update_jul_2025.csv", fileEncoding = "UTF-8")
-SAMPLES <- read.csv("SAMPLES_BE_ICES_update_jul_2025.csv", fileEncoding = "UTF-8")
-POSITIONS <- read.csv("POSITIONS_BE_ICES_update_jul_2025.csv", fileEncoding = "UTF-8")
-OBSERVATIONS <- read.csv("OBSERVATIONS_BE_ICES_update_jul_2025.csv", fileEncoding = "UTF-8")
+CAMPAIGNS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/CAMPAIGNS_BE_ICES_update_jul_2025_example.csv", fileEncoding = "UTF-8")
+SAMPLES <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/SAMPLES_BE_ICES_update_jul_2025_example.csv", fileEncoding = "UTF-8")
+POSITIONS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/POSITIONS_BE_ICES_update_jul_2025_example.csv", fileEncoding = "UTF-8")
+OBSERVATIONS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/OBSERVATIONS_BE_ICES_update_jul_2025_example.csv", fileEncoding = "UTF-8")
 
 #Add RecordTypes
 CAMPAIGNS <- CAMPAIGNS %>%
@@ -63,10 +63,10 @@ write.table(ESAS_2_ICES_DB, "ESAS_INBO_2025_07_09_A.csv", sep="\t", row.names=F,
 
 #Read data
 setwd("G:/Mijn Drive/Mijn Documenten/SAS DB 2024/Update SAS juni 2025")
-CAMPAIGNS <- read.csv("CAMPAIGNS_BE_ICES_update_jul_2025_B.csv", fileEncoding = "UTF-8")
-SAMPLES <- read.csv("SAMPLES_BE_ICES_update_jul_2025_B.csv", fileEncoding = "UTF-8")
-POSITIONS <- read.csv("POSITIONS_BE_ICES_update_jul_2025_B.csv", fileEncoding = "UTF-8")
-OBSERVATIONS <- read.csv("OBSERVATIONS_BE_ICES_update_jul_2025_B.csv", fileEncoding = "UTF-8")
+CAMPAIGNS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/CAMPAIGNS_BE_ICES_update_jul_2025_B_example.csv", fileEncoding = "UTF-8")
+SAMPLES <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/SAMPLES_BE_ICES_update_jul_2025_B_example.csv", fileEncoding = "UTF-8")
+POSITIONS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/POSITIONS_BE_ICES_update_jul_2025_B_example.csv", fileEncoding = "UTF-8")
+OBSERVATIONS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/OBSERVATIONS_BE_ICES_update_jul_2025_B_example.csv", fileEncoding = "UTF-8")
 
 #Add RecordTypes
 CAMPAIGNS <- CAMPAIGNS %>%
@@ -113,5 +113,5 @@ ESAS_2_ICES_DB <- as.data.frame(ESAS_2_ICES_DB)
 head(ESAS_2_ICES_DB)
 
 #Write data
-write.table(ESAS_2_ICES_DB, "ESAS_INBO_2025_07_09_B.csv", sep="\t", row.names=F, col.names=F, quote=F, 
+write.table(ESAS_2_ICES_DB, "ESAS_INBO_2025_07_09_B_example.csv", sep="\t", row.names=F, col.names=F, quote=F, 
             fileEncoding = "UTF-8")
