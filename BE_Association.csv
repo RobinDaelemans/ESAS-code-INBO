@@ -1,0 +1,31 @@
+Association_INBO;Association_ESAS;Description_ESAS
+A;21;associated with other vessel
+B;22;associated with or on buoy
+BW;22;associated with or on buoy
+B~SF;22;associated with or on buoy
+C;28;associated with land (e.g colony)
+D;15;associated with floating litter
+E;18;associated with observation base
+H;14;sitting on or near floating wood
+K;28;associated with land (e.g colony)
+L;13;associated with line in sea
+M;28;associated with land (e.g colony)
+N;28;associated with land (e.g colony)
+O;16;associated with oil slick
+P;23;associated with offshore platform
+PX;110~23;inside wind farm, associated with platform
+P~X;110~23;inside wind farm, associated with platform
+Q;28;associated with land (e.g colony)
+T;116;sitting on wind turbine (foundation)
+TW;117;flying or swimming near wind turbine (foundation)
+V;26;associated with fishing vessel
+W;17;associated with floating seaweed
+X;110;inside wind farm
+XD;110~15;inside wind farm, associated with floating litter
+XE;110~18;inside wind farm, associated with observation base
+E~X;110~18;inside wind farm, associated with observation base
+XH;110~14;inside wind farm, sitting on or near floating wood
+XW;110~17;inside wind farm, associated with floating seaweed
+XB;110~22;inside wind farm, associated with or on buoy
+B~X;110~22;inside wind farm, associated with or on buoy
+X~V;110~26;inside wind farm, associated with fishing vessel
