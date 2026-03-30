@@ -1,6 +1,3 @@
-
-
-
 # This script converts the internal INBO database (consisting of the tables TRIPALL, BASEALL and OBSALL) into the ESAS data format
 # consisting of the tables CAMPAIGNS, SAMPLES, POSITIONS and OBSERVATIONS. 
 # As we at INBO use some slightly different coding (for instance for associations and behaviour), this script also converts these codes to the correct ESAS codes
@@ -14,11 +11,10 @@ library(tidyverse)
 library(lubridate)
 library(readxl)
 
-# Load the internal INBO database
-setwd("G:/Mijn Drive/Mijn Documenten/SAS DB 2024/Update SAS juni 2025")
-TRP <- read.csv("TRIPALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
-POS <- read.csv("BASEALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
-OBS <- read.csv("BIRDALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
+# Load the internal INBO database (we use a subset in this example)
+TRP <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/TRIPALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
+POS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/BASEALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
+OBS <- read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/BIRDALL_MERGE_1992_2024_b_example.csv", fileEncoding = "UTF-8")
 
 # Select vessel
 # Select surveys: in this example we only want to upload the surveys/trips from 2024 onwards to the ESAS database
@@ -167,7 +163,6 @@ OBSERVATIONS <- OBSERVATIONS %>% mutate("ICES_Notes" = Notes)
 #select column and trim column names
 OBSERVATIONS <- OBSERVATIONS %>% select(starts_with("ICES_"))
 colnames(OBSERVATIONS) <- str_remove(colnames(OBSERVATIONS), "ICES_")
-
 
 
 #SAVE FILES FOR VESSEL SIMON STEVIN
