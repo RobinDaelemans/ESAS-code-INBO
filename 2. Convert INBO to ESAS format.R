@@ -103,9 +103,8 @@ table(OBS$Distance)
 levels(as.factor(OBS$Distance))
 
 #Map columns with new vocabulary (replace inbo codes for associtions and behaviour by the correct ESAS codes)
-setwd("G:/Mijn Drive/Mijn Documenten/SAS DB 2024/Update SAS juni 2025")
-ASS <-  as.data.frame(read_excel("BE_Association.xlsx")) # internal INBO codes for associations
-BEH <-  as.data.frame(read_excel("BE_Behaviour.xlsx")) # internal INBO codes for behaviour
+ASS <-  read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/BE_Association.csv") # internal INBO codes for associations
+BEH <-  read.csv("https://raw.githubusercontent.com/RobinDaelemans/ESAS-code-INBO/refs/heads/main/BE_Behaviour.csv") # internal INBO codes for behaviour
 
 #Association
 OBS$Association_recoded <- plyr::mapvalues(OBS$Association, 
