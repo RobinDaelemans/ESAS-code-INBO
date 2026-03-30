@@ -54,7 +54,7 @@ ESAS_2_ICES_DB[is.na(ESAS_2_ICES_DB)] <- ""
 ESAS_2_ICES_DB <- as.data.frame(ESAS_2_ICES_DB)
 head(ESAS_2_ICES_DB)
 
-#Write data
+#Write data to a file that can be uploaded at the ESAS portal
 write.table(ESAS_2_ICES_DB, "ESAS_INBO_2025_07_09_A_example.csv", sep="\t", row.names=F, col.names=F, quote=F, 
             fileEncoding = "UTF-8")
 
@@ -112,6 +112,6 @@ ESAS_2_ICES_DB[is.na(ESAS_2_ICES_DB)] <- ""
 ESAS_2_ICES_DB <- as.data.frame(ESAS_2_ICES_DB)
 head(ESAS_2_ICES_DB)
 
-#Write data
+#Write data to a file that can be uploaded at the ESAS portal
 write.table(ESAS_2_ICES_DB, "ESAS_INBO_2025_07_09_B_example.csv", sep="\t", row.names=F, col.names=F, quote=F, 
             fileEncoding = "UTF-8")
