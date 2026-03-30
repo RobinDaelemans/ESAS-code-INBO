@@ -166,14 +166,14 @@ colnames(OBSERVATIONS) <- str_remove(colnames(OBSERVATIONS), "ICES_")
 
 #SAVE FILES FOR VESSEL SIMON STEVIN
 setwd("G:/Mijn Drive/Mijn Documenten/SAS DB 2024/Update SAS juni 2025")
-write.csv(CAMPAIGNS,"CAMPAIGNS_BE_ICES_update_jul_2025.csv", row.names = F, fileEncoding = "UTF-8")
-write.csv(SAMPLES,"SAMPLES_BE_ICES_update_jul_2025.csv", row.names = F, fileEncoding = "UTF-8")
-write.csv(POSITIONS,"POSITIONS_BE_ICES_update_jul_2025.csv", row.names = F, fileEncoding = "UTF-8")
-write.csv(OBSERVATIONS,"OBSERVATIONS_BE_ICES_update_jul_2025.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(CAMPAIGNS,"CAMPAIGNS_BE_ICES_update_jul_2025_example.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(SAMPLES,"SAMPLES_BE_ICES_update_jul_2025_example.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(POSITIONS,"POSITIONS_BE_ICES_update_jul_2025_example.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(OBSERVATIONS,"OBSERVATIONS_BE_ICES_update_jul_2025_example.csv", row.names = F, fileEncoding = "UTF-8")
 
 #SAVE FILES FOR VESSEL BELGICA
 setwd("G:/Mijn Drive/Mijn Documenten/SAS DB 2024/Update SAS juni 2025")
-write.csv(CAMPAIGNS,"CAMPAIGNS_BE_ICES_update_jul_2025_B.csv", row.names = F, fileEncoding = "UTF-8")
-write.csv(SAMPLES,"SAMPLES_BE_ICES_update_jul_2025_B.csv", row.names = F, fileEncoding = "UTF-8")
-write.csv(POSITIONS,"POSITIONS_BE_ICES_update_jul_2025_B.csv", row.names = F, fileEncoding = "UTF-8")
-write.csv(OBSERVATIONS,"OBSERVATIONS_BE_ICES_update_jul_2025_B.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(CAMPAIGNS,"CAMPAIGNS_BE_ICES_update_jul_2025_B_example.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(SAMPLES,"SAMPLES_BE_ICES_update_jul_2025_B_example.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(POSITIONS,"POSITIONS_BE_ICES_update_jul_2025_B_example.csv", row.names = F, fileEncoding = "UTF-8")
+write.csv(OBSERVATIONS,"OBSERVATIONS_BE_ICES_update_jul_2025_B_example.csv", row.names = F, fileEncoding = "UTF-8")
