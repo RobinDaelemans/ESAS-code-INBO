@@ -1,0 +1,4 @@
+"CampaignID","SampleID","Date","PlatformCode","PlatformClass","PlatformSide","PlatformHeight","TransectWidth","SamplingMethod","PrimarySampling","TargetTaxa","DistanceBins","UseOfBinoculars","NumberOfObservers","Notes"
+110001081,110001081,"2024-03-18","11BU",30,NA,NA,300,1,TRUE,1,"0|50|100|200|300",3,1,NA
+110001082,110001082,"2024-03-20","11BU",30,NA,NA,300,1,TRUE,1,"0|50|100|200|300",3,1,NA
+110001083,110001083,"2024-03-22","11BU",30,NA,NA,300,1,TRUE,1,"0|50|100|200|300",3,1,NA
