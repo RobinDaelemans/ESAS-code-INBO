@@ -1,4 +1,4 @@
-# This script converts the internal INBO database (consisting of the tables TRIPALL, BASEALL and OBSALL) into the ESAS data format
+# This script converts the internal INBO database (consisting of the tables TRIPALL, BASEALL and BIRDALL) into the ESAS data format
 # consisting of the tables CAMPAIGNS, SAMPLES, POSITIONS and OBSERVATIONS. 
 # As we at INBO use some slightly different coding (for instance for associations and behaviour), this script also converts these codes to the correct ESAS codes
 # In Belgium we only have two research vessels and we run this code separately for each vessel because some variables in the dataset 'SAMPLES' are different
